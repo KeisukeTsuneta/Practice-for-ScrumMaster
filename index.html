@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="鈴木パン工房|スクラム練習用のサイトです。">
+<meta name="keywords" content="">
+<title>鈴木パン工房 | スクラム練習用のサイトです。</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="js/jquery1.7.2.min.js"></script>
+<script src="js/script.js"></script>
+
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+</head>
+<body>
+<!-- ヘッダー -->
+<div id="header">
+	<div class="inner">
+		<!-- ロゴ -->
+		<div class="logo">
+			<a href="index.html">鈴木パン工房<br><span>Bread</span></a>
+      <h1>スクラム練習用のサイトです</h1>
+		</div>
+		<!-- / ロゴ -->
+    
+	  <!-- メインナビゲーション -->
+    <nav id="mainNav">
+  		<a class="menu" id="menu"><span>MENU</span></a>
+			<div class="panel">
+				<ul>
+					<!--問題1-->
+					<li><a href="index.html">トップページ<br><span>Top</span></a></li>
+					<li><a href="greeting.html">ごあいさつ<br><span>Greeting</span></a></li>
+					<li><a href="service.html">サービス概要<br><span>Service</span></a></li>
+					<li><a href="approach.html">弊社の取り組み<br><span>Approach</span></a></li>
+					<li><a href="company.html">会社情報<br><span>Company</span></a></li>
+					<li><a href="contact.html">お問い合わせ<br><span>Contact</span></a></li>
+				</ul>
+      </div>
+    </nav>
+		<!-- メインナビゲーション -->
+    
+  </div>
+</div>
+<!-- / ヘッダー -->
+
+<!-- メイン画像 -->
+<div id="mainBanner" class="mainImg">
+  <div class="inner">
+		<img src="images/mainImg.jpg" alt="" width="930" height="290">
+    <div class="slogan">
+			<h2>自然との調和を目指す企業です</h2>
+			<h3>革新的な技術で世の中を動かす企業を目指します。</h3>
+		</div>
+	</div>
+</div>
+<!-- / メイン画像 -->
+
+<div id="wrapper">
+
+
+	<!-- / 4カラム -->
+      
+	<section class="content">
+		<h3 class="heading">パン紹介</h3>
+		<article>
+			<img src="images/sample2.jpg" width="200" height="100" alt="" class="alignleft frame">
+			<p>弊社では大人から子供までおいしく頂けるパンを毎朝丁寧に焼き上げております。</p>
+			<p>創業当初からあるパンや、季節を感じさせるパン、期間限定の商品など全100種類のパンからお選びいただけます。</p>
+			<p>中には<a href = "subpage.html">レシピ</a>を公開しているものもございますのでぜひお子さんと一緒に、友達と一緒に作ってみてください！</p>
+
+		</article>
+	</section>
+    
+	<!-- サブコンテンツ -->
+	<aside id="sub" class="gridWrapper">
+    
+		<section class="grid">
+			  <h3>店舗SNS</h3>
+		<ul class="list">
+				  <!--問題3-->
+				  <li>twitter</li>
+				  <li>instagram</li>
+		</ul> 
+		  </section>  
+	  
+	  
+		
+	  <section class="grid">
+			  <h3>その他情報</h3>
+			  <ul>
+				 <!--問題4-->
+				 <li>店舗位置</li>
+				  
+		  
+				  <li><a href="subpage.html">最新商品のご紹介</a></li>
+				  
+			  </ul>
+		  </section>   
+  
+	  </aside>
+	  <!-- / サブコンテンツ -->
+</div>
+<!-- / WRAPPER -->
+
+<!-- フッター -->
+<div id="footer">
+	<div class="inner">
+    
+		<!-- 3カラム -->
+    <section class="gridWrapper">
+      
+			<article class="grid">
+      	<!-- ロゴ -->
+				<p class="logo"><a href="index.html">Company Name<br /><span>Your Company Slogan</span></a></p>
+				<!-- / ロゴ -->
+			</article>
+			
+      <article class="grid">
+      	<!-- 電話番号+受付時間 -->
+				<p class="tel">電話: <strong>012-3456-7890</strong></p>
+				<p>受付時間: 平日 AM 10:00 〜 PM 5:00</p>
+				<!-- / 電話番号+受付時間 -->
+			</article>
+			
+      <article class="grid copyright">
+      	Copyright(c) 2012 Sample Inc. All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a>
+			</article>
+		
+    </section>
+		<!-- / 3カラム -->
+      
+	</div>
+</div>
+<!-- / フッター -->
+<div class="pagetop">↑</div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="鈴木パン工房|スクラム練習用のサイトです。">
+<meta name="keywords" content="">
+<title>鈴木パン工房 | スクラム練習用のサイトです。</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="js/jquery1.7.2.min.js"></script>
+<script src="js/script.js"></script>
+
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+
+</head>
+<body>
+<!-- ヘッダー -->
+<div id="header">
+	<div class="inner">
+		<!-- ロゴ -->
+		<div class="logo">
+			<a href="index.html">鈴木パン工房<br><span>Bread</span></a>
+      <h1>スクラム練習用のサイトです</h1>
+		</div>
+		<!-- / ロゴ -->
+    
+	  <!-- メインナビゲーション -->
+    <nav id="mainNav">
+  		<a class="menu" id="menu"><span>MENU</span></a>
+			<div class="panel">
+				<ul>
+					<!--問題1-->
+					<li><a href="index.html">トップページ<br><span>Top</span></a></li>
+					<li><a href="greeting.html">ごあいさつ<br><span>Greeting</span></a></li>
+					<li><a href="service.html">サービス概要<br><span>Service</span></a></li>
+					<li><a href="approach.html">弊社の取り組み<br><span>Approach</span></a></li>
+					<li><a href="company.html">会社情報<br><span>Company</span></a></li>
+					<li><a href="contact.html">お問い合わせ<br><span>Contact</span></a></li>
+				</ul>
+      </div>
+    </nav>
+		<!-- メインナビゲーション -->
+    
+  </div>
+</div>
+<!-- / ヘッダー -->
+
+<!-- サブ画像 -->
+<div id="mainBanner" class="subImg">
+  <div class="inner">
+		<!--問題2-->
+		<img src="" alt="" width="" height="">
+    <div class="slogan">
+			<h2>サブページ</h2>
+			
+		</div>
+	</div>
+</div>
+<!-- / サブ画像 -->
+
+<div id="wrapper">
+
+	
+
+  	<section class="content">
+			<h3 class="heading">レシピ集</h3>
+			<p class = "recipe"> 鈴木パン工房の食パンのレシピ </p>
+			<img src="images/pan.jpg" width="160" alt="" class="alignleft">
+			<p>用意するもの</p>
+			<ul>
+				<li>強力粉:250g</li>
+				<li>砂糖  :20g</li>
+				<li>塩    :5g</li>
+				<li>バター :10g</li>
+				<li>ドライイースト :3g</li>
+				<li>水 :170g</li>
+				<li>スキムミルク :5g</li>
+			</ul>
+
+			<p class = "recipe"> 生地作り </p>
+			<img src="images/pan2.jpg" width="130" alt="" class="alignright">
+			<p>ボウルに強力粉、砂糖、塩、スキムミルク、ドライイーストを入れてしっかりと混ぜ合わせます。</p>
+			<p>混ぜ合わせたものに水を加えてさらによく混ぜます。</p>
+			<p>ある程度生地がまとまって、粉っぽさがなくなったら清潔な台の上に生地を移動します。</p>
+			<p>手で生地を題にこすりつけるようにこねる作業を滑らかになるまで繰り返します。</p>
+			<p>先ほど作った生地の中にバターを包み込むようにして加え、また同じようにこねる作業をします。</p>
+
+			<p class = "recipe"> 発酵 </p>
+			<img src="images/pan3.jpg" width="160" alt="" class="alignleft">
+			<p>こねる作業が終わったら生地を丸めてボウルに入れ、乾燥しないようにラップをかけ30度ほどで60~90分発行させます。</p>
+			<p>生地が約2倍になったら完了です。</p>
+			<p>ボウルから生地を取り出し伸ばしてガスを抜きます。</p>
+			<p>ガスを抜いたら生地を伸ばし3つ折りにします。</p>
+
+			<p class = "recipe"> 焼き上げ </p>
+			<img src="images/pan4.jpg" width="130" alt="" class="alignright">
+			<p>3つ折りにした生地を丸く丸め適量の油を塗った型に入れ、35度で一時間発行させます。</p>
+			<p>200度に余熱したオーブンで30分焼き上げ完成です！！</p>
+
+
+		
+
+		</section>
+
+    
+	</section>
+	<!-- / コンテンツ -->
+
+	<!-- サブコンテンツ -->
+  <aside id="sub" class="gridWrapper">
+    
+  	<section class="grid">
+			<h3>店舗SNS</h3>
+      <ul class="list">
+				<!--問題3-->
+				<li>twitter</li>
+				<li>instagram</li>
+      </ul> 
+		</section>  
+    
+    
+      
+    <section class="grid">
+			<h3>その他情報</h3>
+			<ul>
+				<!--問題4-->
+				<li>店舗位置</li>
+				
+		
+				<li><a href="subpage.html">最新商品のご紹介</a></li>
+				
+			</ul>
+		</section>   
+
+	</aside>
+	<!-- / サブコンテンツ -->
+
+</div>
+<!-- / WRAPPER -->
+
+<!-- フッター -->
+<div id="footer">
+	<div class="inner">
+    
+		<!-- 3カラム -->
+    <section class="gridWrapper">
+      
+			<article class="grid">
+      	<!-- ロゴ -->
+				<p class="logo"><a href="index.html">Company Name<br /><span>Your Company Slogan</span></a></p>
+				<!-- / ロゴ -->
+			</article>
+			
+      <article class="grid">
+      	<!-- 電話番号+受付時間 -->
+				<p class="tel">電話: <strong>012-3456-7890</strong></p>
+				<p>受付時間: 平日 AM 10:00 〜 PM 5:00</p>
+				<!-- / 電話番号+受付時間 -->
+			</article>
+			
+      <article class="grid copyright">
+      	Copyright(c) 2012 Sample Inc. All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a>
+			</article>
+		
+    </section>
+		<!-- / 3カラム -->
+      
+	</div>
+</div>
+<!-- / フッター -->
+<div class="pagetop">↑</div>
+</body>
+</html>
